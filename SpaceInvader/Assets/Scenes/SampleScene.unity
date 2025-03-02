@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &8976534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -442,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &22182796
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -640,6 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &31886837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -838,6 +841,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &36810695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1036,6 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &62064044
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1234,6 +1239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &101347737
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1432,6 +1438,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &174436467
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1505,6 +1512,37 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &198783424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 198783425}
+  m_Layer: 0
+  m_Name: Pontotiro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &198783425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198783424}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 245801028}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214567359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &214567364
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1828,6 +1867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &214791478
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2026,6 +2066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &223458160
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2113,7 +2154,7 @@ GameObject:
   - component: {fileID: 245801025}
   - component: {fileID: 245801024}
   m_Layer: 0
-  m_Name: SpaceInvaders_22 (1)
+  m_Name: Jogador
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2204,11 +2245,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bab8f5ab31df664e95324b16651004a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Pontotiro: {fileID: 198783425}
+  Bala: {fileID: 6422488870455888656, guid: 8e491cd9c64d2024cb1f1a3df6c0089b, type: 3}
   moveUp: 275
   moveDown: 276
   shoot: 32
   speed: 10
-  boundY: 2.25
+  boundY: 10
+  waitTime: 2
 --- !u!212 &245801027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2272,10 +2316,11 @@ Transform:
   m_GameObject: {fileID: 245801023}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.52, z: 0}
+  m_LocalPosition: {x: 0, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 198783425}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &278406147
@@ -2403,6 +2448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &278406152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2601,6 +2647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &283504111
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2799,6 +2846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &298173427
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2997,6 +3045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &366675680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3195,6 +3244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &375787320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3393,6 +3443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &381508001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3591,6 +3642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &399050652
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3664,6 +3716,97 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &430425142
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 430425143}
+  - component: {fileID: 430425144}
+  - component: {fileID: 430425145}
+  m_Layer: 0
+  m_Name: dir
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &430425143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430425142}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.81, y: 0, z: 0}
+  m_LocalScale: {x: 1.3, y: 11.127188, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1473457400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &430425144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430425142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afce6c03a5348a440b15984cf298756a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &430425145
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430425142}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &431956334
 GameObject:
   m_ObjectHideFlags: 0
@@ -3789,6 +3932,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &431956339
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3987,6 +4131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &434382306
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4185,6 +4330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &435357108
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4383,6 +4529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &458566151
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4581,6 +4728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &506338590
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4746,6 +4894,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &524875500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 524875501}
+  - component: {fileID: 524875502}
+  - component: {fileID: 524875503}
+  m_Layer: 0
+  m_Name: cima
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &524875501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524875500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.12, y: 6.58, z: 0}
+  m_LocalScale: {x: 22.581291, y: 2.5625, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1473457400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &524875502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524875500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afce6c03a5348a440b15984cf298756a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &524875503
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524875500}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &558581755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,6 +5110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &558581760
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5069,6 +5309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &560167106
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5267,6 +5508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &580300601
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5465,6 +5707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &611753534
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5663,6 +5906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &627182069
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5861,6 +6105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &688247039
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6059,6 +6304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &743640718
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6257,6 +6503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &757267841
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6455,6 +6702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &764193007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6653,6 +6901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &851940092
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6851,6 +7100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &872395531
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7049,6 +7299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &880688907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7247,6 +7498,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1056782115
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7445,6 +7697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1067335175
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7643,6 +7896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1079494145
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7841,6 +8095,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1079624944
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8039,6 +8294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1101557696
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8112,6 +8368,97 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1113190681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113190682}
+  - component: {fileID: 1113190683}
+  - component: {fileID: 1113190684}
+  m_Layer: 0
+  m_Name: esq
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1113190682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113190681}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.97, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 10.631677, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1473457400}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1113190683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113190681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afce6c03a5348a440b15984cf298756a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &1113190684
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113190681}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1124795132
 GameObject:
   m_ObjectHideFlags: 0
@@ -8348,6 +8695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1139792041
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8546,6 +8894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1139931966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8744,6 +9093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1180260177
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8942,6 +9292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1316207363
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9140,6 +9491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1343784406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9338,6 +9690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1362504258
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9536,6 +9889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1371103516
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9734,6 +10088,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1374257912
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9807,92 +10162,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1 &1421066863
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1421066865}
-  - component: {fileID: 1421066864}
-  m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1421066864
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421066863}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 20b6018fa6139e64d93497b8a19dbe7a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1421066865
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1421066863}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -3.84, z: 0}
-  m_LocalScale: {x: 0.1094, y: 0.5335, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1468488739
 GameObject:
   m_ObjectHideFlags: 0
@@ -10018,6 +10287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1468488744
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10091,6 +10361,40 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1473457399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1473457400}
+  m_Layer: 0
+  m_Name: paredes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1473457400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473457399}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.3461442, y: -0.2353816, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1113190682}
+  - {fileID: 430425143}
+  - {fileID: 524875501}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477152556
 GameObject:
   m_ObjectHideFlags: 0
@@ -10216,6 +10520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1477152561
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10414,6 +10719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1481090907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10612,6 +10918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1483130361
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10810,6 +11117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1526759486
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11008,6 +11316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1535911202
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11206,6 +11515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1595501246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11404,6 +11714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1617766503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11602,6 +11913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1660612491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11800,6 +12112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1709833929
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11998,6 +12311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1721494581
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12196,6 +12510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1742977977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12394,6 +12709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1766074128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12592,6 +12908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1766599403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12790,6 +13107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1770391131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12988,6 +13306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1790003212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13186,6 +13505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1842743107
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13384,6 +13704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1851306751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13582,6 +13903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1899941500
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13780,6 +14102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1912177938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13978,6 +14301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1940201743
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14176,6 +14500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1941658589
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14374,6 +14699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1969033168
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14572,6 +14898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &1987078212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14770,6 +15097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2009459752
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14968,6 +15296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2020967784
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15166,6 +15495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2057967750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15364,6 +15694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2058385926
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15562,6 +15893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2061353945
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15760,6 +16092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2100684722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15958,6 +16291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2127226806
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16156,6 +16490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2137189708
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16354,6 +16689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 1
+  ymove: 0.2
 --- !u!61 &2142938009
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16434,4 +16770,4 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1124795133}
   - {fileID: 245801028}
-  - {fileID: 1421066865}
+  - {fileID: 1473457400}

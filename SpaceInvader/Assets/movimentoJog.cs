@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class movimentoJog : MonoBehaviour
 {
+    public Transform Pontotiro;
+    public GameObject Bala;
+
     public KeyCode moveUp = KeyCode.W;
     public KeyCode moveDown = KeyCode.S;
     public KeyCode shoot = KeyCode.Space;
     public float speed = 10.0f;
     public float boundY = 2.25f;
+    private float timer = 0.0f;
+    public float waitTime = 1.0f;
     private Rigidbody2D rb2d;
 
     // Start is called before the first frame update
@@ -21,6 +27,11 @@ public class movimentoJog : MonoBehaviour
     void Update()
     {
         var vel = rb2d.velocity;
+        timer += Time.deltaTime;
+        if (Input.GetKey(shoot) && timer >= waitTime){
+            timer = 0.0f;
+            Instantiate(Bala,Pontotiro.position,transform.rotation);
+        }
 
         if (Input.GetKey(moveUp))
         {

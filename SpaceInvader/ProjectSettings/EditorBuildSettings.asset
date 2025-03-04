@@ -5,7 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Fase1.unity
+    guid: 2798db60712089447ba54809809293c6
+  - enabled: 1
+    path: Assets/Scenes/Fase2.unity
+    guid: 804c4f898d4aac246afea9db69132592
+  - enabled: 1
+    path: Assets/Scenes/Loser.unity
+    guid: 4b794b0205d461149834876b6bda6251
+  - enabled: 1
+    path: Assets/Scenes/Victoria.unity
+    guid: cbe3c17a8d195d242b1f91f5f41382d3
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

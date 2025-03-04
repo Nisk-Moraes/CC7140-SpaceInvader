@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "spaceinvader.sln"
+    "dotnet.defaultSolution": "SpaceInvader.sln"
 }

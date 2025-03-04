@@ -1,64 +1,77 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 
-public class movimentoJog : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    public Transform Pontotiro;
-    public GameObject Bala;
+    [SerializeField] private float speed = 5f;
 
-    public KeyCode moveUp = KeyCode.W;
-    public KeyCode moveDown = KeyCode.S;
-    public KeyCode shoot = KeyCode.Space;
-    public float speed = 10.0f;
-    public float boundY = 2.25f;
-    private float timer = 0.0f;
-    public float waitTime = 1.0f;
+    [SerializeField] private Sprite leftShip;
+    [SerializeField] private Sprite rightShip;
+    [SerializeField] private Sprite centerShip;
+
+    [SerializeField] private GameObject playerProjectile;
+
+    public int lives = 3;
+    public int score = 0;
+
     private Rigidbody2D rb2d;
+    private SpriteRenderer sr;
 
-    // Start is called before the first frame update
-    void Start()
+    private Vector2 movement;
+
+    private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        var vel = rb2d.velocity;
-        timer += Time.deltaTime;
-        if (Input.GetKey(shoot) && timer >= waitTime){
-            timer = 0.0f;
-            Instantiate(Bala,Pontotiro.position,transform.rotation);
-        }
+        movement.x = Input.GetAxis("Horizontal");
 
-        if (Input.GetKey(moveUp))
+        if (movement.x < 0) sr.sprite = leftShip;
+        else if (movement.x > 0) sr.sprite = rightShip;
+        else sr.sprite = centerShip; ;
+
+        if (Input.GetKeyDown("space"))
         {
-            vel.x = speed;
+            Shoot();
         }
-        else if (Input.GetKey(moveDown))
+    }
+
+    private void FixedUpdate()
+    {
+        rb2d.MovePosition(rb2d.position + movement * speed * Time.fixedDeltaTime);
+    }
+
+    private void Shoot()
+    {
+        if (GameObject.FindGameObjectsWithTag("PlayerProjectile").Length == 0)
         {
-            vel.x = -speed;
+            Instantiate(playerProjectile, transform.position + new Vector3(0, 0.4f, 0), Quaternion.identity);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        lives -= 1;
+        if (lives == 0)
+        {
+
         }
         else
         {
-            vel.x = 0;
+            // Respawn();
         }
-
-        rb2d.velocity = vel;
-
-        var pos = transform.position;
-
-        if (pos.x > boundY)
-        {
-            pos.x = boundY;
-        }
-        else if (pos.x < -boundY)
-        {
-            pos.x = -boundY;
-        }
-
-        transform.position = pos;
     }
+
+    // private void Respawn()
+    // {
+    //     foreach (var bullet in FindObjectsOfType<EnemyProjectile>())
+    //     {
+    //         Destroy(bullet.gameObject);
+    //     }
+    //     transform.position = new Vector3(0, -4.5f, 0);
+    // }
 }

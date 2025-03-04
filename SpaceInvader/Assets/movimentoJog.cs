@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
@@ -5,8 +6,13 @@ using UnityEngine;
 
 public class movimentoJog : MonoBehaviour
 {
+    
+    public SpriteRenderer spriteRenderer;
+    public Sprite newSprite;
     public Transform Pontotiro;
+
     public GameObject Bala;
+    private int vidas;
 
     public KeyCode moveUp = KeyCode.W;
     public KeyCode moveDown = KeyCode.S;
@@ -21,6 +27,17 @@ public class movimentoJog : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        vidas = GameManager.vidas;
+    }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(collision.gameObject);
+        vidas -=1;
+        print(vidas);
+        if (vidas <0){
+            //fim do jogo, acabou vidas do player
+            spriteRenderer.sprite = newSprite;
+        }
     }
 
     // Update is called once per frame
@@ -28,37 +45,40 @@ public class movimentoJog : MonoBehaviour
     {
         var vel = rb2d.velocity;
         timer += Time.deltaTime;
-        if (Input.GetKey(shoot) && timer >= waitTime){
-            timer = 0.0f;
-            Instantiate(Bala,Pontotiro.position,transform.rotation);
-        }
+        if (vidas >=0 ){
+            if (Input.GetKey(shoot) && timer >= waitTime){
+                timer = 0.0f;
+                Instantiate(Bala,Pontotiro.position,transform.rotation);
+            }
 
-        if (Input.GetKey(moveUp))
-        {
-            vel.x = speed;
-        }
-        else if (Input.GetKey(moveDown))
-        {
-            vel.x = -speed;
-        }
-        else
-        {
-            vel.x = 0;
-        }
+            if (Input.GetKey(moveUp))
+            {
+                vel.x = speed;
+            }
+            else if (Input.GetKey(moveDown))
+            {
+                vel.x = -speed;
+            }
+            else
+            {
+                vel.x = 0;
+            }
 
-        rb2d.velocity = vel;
+            rb2d.velocity = vel;
 
-        var pos = transform.position;
+            var pos = transform.position;
 
-        if (pos.x > boundY)
-        {
-            pos.x = boundY;
+            if (pos.x > boundY)
+            {
+                pos.x = boundY;
+            }
+            else if (pos.x < -boundY)
+            {
+                pos.x = -boundY;
+            }
+
+            transform.position = pos;
         }
-        else if (pos.x < -boundY)
-        {
-            pos.x = -boundY;
-        }
-
-        transform.position = pos;
+        
     }
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class invaders : MonoBehaviour
 {
+    public Transform Pontotiro;
+    public GameObject Bala;
+    public float pontuacao = 10; //quanto esta nave vale quando destruida
     private Rigidbody2D rb2d;
     private float timer = 0.0f;
     public float waitTime = 1f;
@@ -30,8 +33,11 @@ public class invaders : MonoBehaviour
         rb2d.velocity = vel;
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision) //nave eh destruida
     {
+        //A FAZER! adicionar logica para aumentar ponto aqui
+        GameManager.pontuacaoAtual += pontuacao;
+        print(GameManager.pontuacaoAtual);
         Destroy(collision.collider.gameObject);
         Destroy(gameObject);
     }
@@ -39,12 +45,20 @@ public class invaders : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
-        
-        if (timer >= waitTime){
-            ChangeState();
-            rb2d.position = new Vector2(rb2d.position.x,rb2d.position.y-ymove);
-            timer = 0.0f;
+       
+        if (!gameObject.CompareTag("chefe")){
+            timer += Time.deltaTime;
+            if (Random.Range(0,100) > 90.0f && timer>=waitTime){ //atira
+                Instantiate(Bala,Pontotiro.position,transform.rotation);
+            }
+            
+            
+            if (timer >= waitTime ){ //desce y e muda de direcao
+                ChangeState();
+                rb2d.position = new Vector2(rb2d.position.x,rb2d.position.y-ymove);
+                timer = 0.0f;
+            }
         }
+        
     }
 }

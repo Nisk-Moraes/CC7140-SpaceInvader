@@ -10,6 +10,10 @@ public class paredes : MonoBehaviour
     {
         Destroy(collision.collider.gameObject);
     }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(collision.gameObject);
+    }
     // Update is called once per frame
-   
+
 }

@@ -11,7 +11,14 @@ public class tiro : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        rb2d.velocity =transform.up*vel;
+        if (gameObject.CompareTag("inimigo"))
+        {
+            rb2d.velocity = transform.up*-vel;
+        }
+        else{
+            rb2d.velocity =transform.up*vel;
+        }
+        
     }
 
     // Update is called once per frame

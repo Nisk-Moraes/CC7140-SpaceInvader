@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 2026994}
   m_Layer: 0
   m_Name: SpaceInvaders_2
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,6 +156,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &2026995
 BoxCollider2D:
@@ -338,7 +339,7 @@ GameObject:
   - component: {fileID: 11406511}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (2)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -359,6 +360,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &11406512
 BoxCollider2D:
@@ -541,7 +543,7 @@ GameObject:
   - component: {fileID: 52747075}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (4)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -562,6 +564,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &52747076
 BoxCollider2D:
@@ -837,7 +840,7 @@ GameObject:
   - component: {fileID: 132656747}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (1)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -874,6 +877,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &132656748
 BoxCollider2D:
@@ -1040,7 +1044,7 @@ GameObject:
   - component: {fileID: 168007470}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (5)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1061,6 +1065,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &168007471
 BoxCollider2D:
@@ -1326,6 +1331,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &195747267
 BoxCollider2D:
@@ -1638,7 +1644,7 @@ MonoBehaviour:
   shoot: 32
   speed: 10
   boundY: 10
-  waitTime: 2
+  waitTime: 1
 --- !u!212 &245801027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1747,7 +1753,7 @@ GameObject:
   - component: {fileID: 305769246}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (1)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1784,6 +1790,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &305769247
 BoxCollider2D:
@@ -2033,6 +2040,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &339898470
 BoxCollider2D:
@@ -2246,7 +2254,7 @@ GameObject:
   - component: {fileID: 351031899}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (3)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2267,6 +2275,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &351031900
 BoxCollider2D:
@@ -2449,7 +2458,7 @@ GameObject:
   - component: {fileID: 357405244}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (1)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2470,6 +2479,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &357405245
 BoxCollider2D:
@@ -2652,7 +2662,7 @@ GameObject:
   - component: {fileID: 385640329}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (6)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2673,6 +2683,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &385640330
 BoxCollider2D:
@@ -3212,6 +3223,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &543971792
 BoxCollider2D:
@@ -3425,7 +3437,7 @@ GameObject:
   - component: {fileID: 606819233}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (1)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3462,6 +3474,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &606819234
 BoxCollider2D:
@@ -3721,7 +3734,7 @@ GameObject:
   - component: {fileID: 723883054}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (3)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3742,6 +3755,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &723883055
 BoxCollider2D:
@@ -4007,6 +4021,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &836620587
 BoxCollider2D:
@@ -4282,7 +4297,7 @@ GameObject:
   - component: {fileID: 851940091}
   m_Layer: 0
   m_Name: SpaceInvaders_4
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4395,6 +4410,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &851940092
 BoxCollider2D:
@@ -4506,6 +4522,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &867205821
 BoxCollider2D:
@@ -4719,7 +4736,7 @@ GameObject:
   - component: {fileID: 933938012}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (1)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4740,6 +4757,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &933938013
 BoxCollider2D:
@@ -4922,7 +4940,7 @@ GameObject:
   - component: {fileID: 958043304}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (7)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4943,6 +4961,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &958043305
 BoxCollider2D:
@@ -5125,7 +5144,7 @@ GameObject:
   - component: {fileID: 965726687}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (1)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5146,6 +5165,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &965726688
 BoxCollider2D:
@@ -5349,6 +5369,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &976190849
 BoxCollider2D:
@@ -5562,7 +5583,7 @@ GameObject:
   - component: {fileID: 1046529019}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (6)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5583,6 +5604,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1046529020
 BoxCollider2D:
@@ -5796,7 +5818,7 @@ GameObject:
   - component: {fileID: 1101557695}
   m_Layer: 0
   m_Name: SpaceInvaders_2
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5909,6 +5931,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1101557696
 BoxCollider2D:
@@ -6116,7 +6139,7 @@ GameObject:
   - component: {fileID: 1124795133}
   m_Layer: 0
   m_Name: spacedudes
-  m_TagString: Untagged
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6192,7 +6215,7 @@ GameObject:
   - component: {fileID: 1170218138}
   m_Layer: 0
   m_Name: SpaceInvaders_3
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6213,6 +6236,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1170218139
 BoxCollider2D:
@@ -6426,7 +6450,7 @@ GameObject:
   - component: {fileID: 1190258930}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (2)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6447,6 +6471,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1190258931
 BoxCollider2D:
@@ -6660,7 +6685,7 @@ GameObject:
   - component: {fileID: 1231437199}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (6)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6681,6 +6706,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1231437200
 BoxCollider2D:
@@ -6884,6 +6910,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1281145379
 BoxCollider2D:
@@ -7066,7 +7093,7 @@ GameObject:
   - component: {fileID: 1330497622}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (5)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7087,6 +7114,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1330497623
 BoxCollider2D:
@@ -7331,7 +7359,7 @@ GameObject:
   - component: {fileID: 1427998580}
   m_Layer: 0
   m_Name: SpaceInvaders_4
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7352,6 +7380,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1427998581
 BoxCollider2D:
@@ -7565,7 +7594,7 @@ GameObject:
   - component: {fileID: 1465001177}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (3)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7586,6 +7615,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1465001178
 BoxCollider2D:
@@ -7834,7 +7864,7 @@ GameObject:
   - component: {fileID: 1502440834}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (4)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7855,6 +7885,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1502440835
 BoxCollider2D:
@@ -8068,7 +8099,7 @@ GameObject:
   - component: {fileID: 1522215328}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (2)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8089,6 +8120,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1522215329
 BoxCollider2D:
@@ -8384,6 +8416,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1526759486
 BoxCollider2D:
@@ -8598,7 +8631,7 @@ GameObject:
   - component: {fileID: 1684488384}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (5)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8619,6 +8652,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1684488385
 BoxCollider2D:
@@ -8954,7 +8988,7 @@ GameObject:
   - component: {fileID: 1809799163}
   m_Layer: 0
   m_Name: SpaceInvaders_3 (7)
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8975,6 +9009,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1809799164
 BoxCollider2D:
@@ -9141,6 +9176,37 @@ Transform:
   - {fileID: 1400503132}
   m_Father: {fileID: 1124795133}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1814829394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1814829395}
+  m_Layer: 0
+  m_Name: SpawnTela
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1814829395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814829394}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894949756
 GameObject:
   m_ObjectHideFlags: 0
@@ -9202,7 +9268,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpawnNave: {fileID: 990864715}
+  SpawnTela: {fileID: 1814829395}
   NaveChefe: {fileID: 7881915450338020073, guid: 909645e629e6a2e4a8494453231ec2d2, type: 3}
+  TelaVitoria: {fileID: 6113037352838422121, guid: 0b5828a87e183284581f6dc332bbe063, type: 3}
+  TelaDerrota: {fileID: 1909385314589102245, guid: 66eb160a9bd52504fb5fcacaa0c0b35b, type: 3}
+  layout: {fileID: 11400000, guid: 34e1a24ae71b7b24bb1b1d7a548f1232, type: 2}
+  pontuacaoFinal: 300
   tempmin: 1
   tempmax: 10
 --- !u!4 &1916724555
@@ -9267,7 +9338,7 @@ GameObject:
   - component: {fileID: 1987078211}
   m_Layer: 0
   m_Name: SpaceInvaders_3
-  m_TagString: inimigo3
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9380,6 +9451,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 30
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1987078212
 BoxCollider2D:
@@ -9470,7 +9542,7 @@ GameObject:
   - component: {fileID: 1991690425}
   m_Layer: 0
   m_Name: SpaceInvaders_2 (7)
-  m_TagString: inimigo2
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9491,6 +9563,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 20
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &1991690426
 BoxCollider2D:
@@ -9710,6 +9783,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &2003206540
 BoxCollider2D:
@@ -9876,7 +9950,7 @@ GameObject:
   - component: {fileID: 2005611555}
   m_Layer: 0
   m_Name: SpaceInvaders_4 (4)
-  m_TagString: inimigo4
+  m_TagString: inimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9897,6 +9971,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 40
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &2005611556
 BoxCollider2D:
@@ -10131,6 +10206,7 @@ MonoBehaviour:
   Bala: {fileID: 6422488870455888656, guid: fd9b1a860e30c504bb07281a3569f207, type: 3}
   pontuacao: 10
   waitTime: 1
+  y: 0
   ymove: 0.2
 --- !u!61 &2037880572
 BoxCollider2D:
@@ -10369,3 +10445,4 @@ SceneRoots:
   - {fileID: 1473457400}
   - {fileID: 990864715}
   - {fileID: 1916724555}
+  - {fileID: 1814829395}

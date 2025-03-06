@@ -8,6 +8,7 @@ public class paredes : MonoBehaviour
   
     void OnCollisionEnter2D(Collision2D collision)
     {
+        
         Destroy(collision.collider.gameObject);
     }
     void OnTriggerEnter2D(Collider2D collision)

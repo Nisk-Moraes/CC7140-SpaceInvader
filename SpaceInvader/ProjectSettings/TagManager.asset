@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - inimigo
+  - inimigo2
+  - inimigo3
+  - inimigo4
+  - chefe
   layers:
   - Default
   - TransparentFX

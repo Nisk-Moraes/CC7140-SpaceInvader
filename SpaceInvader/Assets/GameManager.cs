@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
             }
             
         }
-        if ((pontuacaoAtual >= pontuacaoFinal || MatouTudo()) && !vitoria){
+        if ((pontuacaoAtual >= pontuacaoFinal) && !vitoria){
             vitoria = true;
             Vitoria();
             Wipe();

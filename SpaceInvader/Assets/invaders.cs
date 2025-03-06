@@ -11,14 +11,14 @@ public class invaders : MonoBehaviour
     private float timer = 0.0f;
     public float waitTime = 1f;
     // private int state = 0;
-    private float x;
+    public float y;
     public float ymove = 1.0f;
     private float speed = 2.0f;
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();  
-        x = transform.position.x;
+       
         // y = transform.position.y;
 
         var vel = rb2d.velocity;
@@ -56,6 +56,9 @@ public class invaders : MonoBehaviour
             if (timer >= waitTime ){ //desce y e muda de direcao
                 ChangeState();
                 rb2d.position = new Vector2(rb2d.position.x,rb2d.position.y-ymove);
+                if (rb2d.position.y <=-5 && !GameManager.invadiram){
+                    GameManager.invadiram = true;
+                }
                 timer = 0.0f;
             }
         }
